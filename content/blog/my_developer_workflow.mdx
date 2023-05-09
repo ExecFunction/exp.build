@@ -1,0 +1,60 @@
+---
+title: My Developer Workflow
+description: My Developer Workflow for frontend development using Arch Linux, Neovim and Wezterm.
+date: "2023-04-24"
+tags:
+  - Workflow
+ogImage: 'https://res.cloudinary.com/scharde/image/upload/blog/desktop.png'
+---
+
+Since everyone's having a piece of their own, let's talk about my development workflow as a front-end web developer.
+
+## Operating System
+
+I use Arch Linux (btw) as my primary OS. Not because of the memes, but I like the thrill of customizing stuff to my liking. Plus, who doesn't love living on the edge with bleeding-edge software updates?
+
+![Arch Linux + GNOME 43](https://res.cloudinary.com/scharde/image/upload/blog/desktop.png?width=1920&height=1080)
+
+I love the flexibility and freedom that Linux distros provide, especially Arch Linux as I can customize a lot of aspects of how it should behave with a press of a single key. I could configure it to change my desktop layout, have a nice top bar that shows system info, or conjure up a full widget system of my own. The possibilities are endless here.
+
+I'm currently on the latest [GNOME](https://www.gnome.org/) but I used to be an avid [BSPWM](https://github.com/baskerville/bspwm) user before. I liked BSPWM's tiling and simple window layout very easy and snappy to use, but I switched to GNOME because I got too lazy to setup and synchronize everything properly. I did not have the time or energy to do that all by myself. Also, I really liked the direction GNOME is moving in with its new rounded design and that nice system tray, which is also one of the reasons why I switched to it.
+
+Now, don't get me wrong, I'm not a Linux elitist. I also use Windows as I have a [dual-booted](https://wiki.archlinux.org/title/Dual_boot_with_Windows) system. I think a lot of people shit on it for a lot of wrong reasons. I like that you get a nice-looking desktop right out of the box without much hassle and everything works flawlessly.
+
+I use Windows mostly for stuff that's not available on Linux (looking at you Adobe) and for gaming obviously. However, it's not the most developer-friendly environment. But that's changing with Windows Subsystem for Linux ([WSL](https://learn.microsoft.com/en-us/windows/wsl/install)) which I haven't had the chance to try out much yet.
+
+## Terminal & Shell
+
+I use [Wezterm](https://github.com/wez/wezterm) as my main terminal. It is a very configurable terminal emulator which also happens to be GPU powered. It uses Lua, which is a simple and small programming language, for configuration so it's really easy to setup. It supports Nerd Fonts out of the box and has a nice glyph rendering. And if that still doesn't impress you, it also has a multiplexer built-in.
+
+![Wezterm + Starship](https://res.cloudinary.com/scharde/image/upload/v1683105607/blog/starship_prompt.png?width=1920&height=1080)
+
+I do a lot of bash scripting but I'm using ZSH as my primary shell. It gives me all the good stuff that either is not supported by bash or needs some kind of workaround to get it working. Things like syntax highlighting, auto-completion, history substring search, and Vim mode makes ZSH very satisfying to use. I was using [powerlevel10k](https://github.com/romkatv/powerlevel10k) as my prompt theme, but I've recently switched to [Starship](https://github.com/starship/starship) and liking it a lot.
+
+I might give Fish shell a try sometime later as I've been hearing a lot of good things about it too. Who knows, maybe it'll be the one to steal my heart (and my terminal sessions).
+
+## UI Design
+
+I use [Figma](https://www.figma.com/) as my go-to design tool as it's free (which is always a plus) and super easy to use. The only downside is that there's no native Linux app, so I have to resort to using the web version or (gasp) booting up Windows. But hey, desperate times call for desperate measures.
+
+I use it occasionally if I have to do site designing (which I'm still trying to get good at).
+
+## Editor
+
+Putting editor at last because it is also the most important of them all. As a web developer, I spend most of my time coding nice UIs or adding functionality to an existing codebase which happens almost entirely inside the code editor. And for that, I need a reliable and efficient code editor.
+
+![Neovim Dashboard](https://res.cloudinary.com/scharde/image/upload/v1683105608/blog/neovim_dash.png?width=1920&height=1080)
+
+Well, I'm using [Neovim](https://neovim.io/) as my primary code editor. Because of how extensible and configurable it is and does everything faster than your average IDE (\*_cough_\* VS Code \*_cough_\*). I'm not going to convince you why you should switch to Neovim and ditch your fancy VS Code setups (although, let's be real, you should give it a try). I'll just tell you why I prefer it over other editors.
+
+I'm mostly into (Neo)Vim because I'm too accustomed to Vim motions at this point and it'd be difficult for me to move to a different IDE (not that I want to switch). While pretty much every IDE provides Vim bindings they are still half-baked and/or work slightly differently.
+
+![Neovim Treesitter Syntax Highlighting](https://res.cloudinary.com/scharde/image/upload/v1683105608/blog/neovim_file.png?width=1920&height=1080)
+
+I'm in love with Vim's ability to perform text manipulation with just a few keystrokes. Also, Neovim is a different beast. It takes text manipulations to a whole different level with [`tree-sitter`](https://github.com/tree-sitter/tree-sitter), which is a blazing-fast language parser tool written in Rust that also powers Neovim's syntax highlighting. Vim motions coupled with the ability to manipulate text based on their AST tokens is just mind-blowing. Doing most of your text changes without leaving your keyboard and the ability to access your programming language's underlying syntax tree is a very important feature (at least for me).
+
+![Neovim Telescope Fuzzy Finder](https://res.cloudinary.com/scharde/image/upload/v1683105604/blog/neovim_telescope.png?width=1920&height=1080)
+
+Neovim also supports the Language Server Protocol (LSP) so your IDE-like features, for example, completions, hover information, go-to-definition, and code actions are also supported (although not out-of-the-box).
+
+I'm gonna be honest here, configuring Neovim can be quite a complex process but once you get the hang of it, you'll wonder how you ever lived without it. Also, I might have to make a separate blog post about how I configured Neovim exactly or what plugins I use to have an awesome DX, as this post will get a lot longer if I tried to do that now.

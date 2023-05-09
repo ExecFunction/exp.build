@@ -1,0 +1,87 @@
+@import "./colors.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: var(--font-family-sans); /* defined in root layout */
+    line-height: theme(lineHeight.normal);
+  }
+
+  h1 {
+    @apply text-fluid-4 leading-tight;
+  }
+
+  h2 {
+    @apply text-fluid-3 leading-snug;
+  }
+
+  h3 {
+    @apply text-fluid-2 leading-snug;
+  }
+
+  h4 {
+    @apply text-fluid-1 leading-snug;
+  }
+
+  h5 {
+    @apply text-fluid-0 leading-normal;
+  }
+
+  p {
+    @apply text-fluid-0 leading-relaxed;
+  }
+}
+
+@layer components {
+  .pill {
+    @apply px-[0.65em] py-[0.25em] rounded-full;
+  }
+
+  .link-header {
+    @apply link inline-flex gap-2 items-center font-bold text-fluid-1 text-accent;
+  }
+
+  .link-header .anchor-link {
+    @apply text-current before:content-['#_'];
+  }
+
+  .link-header svg {
+    @apply text-current;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-accent via-accent-secondary to-accent-ternary;
+  }
+
+  .bg-gradient-secondary {
+    @apply bg-gradient-to-r from-accent to-accent-secondary;
+  }
+
+  .bg-circles {
+    @apply absolute inset-0 -z-10 bg-[image:--gradient-circles];
+  }
+
+  .text-gradient-primary {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-secondary bg-clip-text text-transparent;
+  }
+
+  .transition-theme {
+    @apply transition-colors duration-300;
+  }
+
+  .link {
+    @apply hover:underline hover:underline-offset-[0.5ex];
+  }
+
+  .link-blue {
+    @apply link text-blue-600;
+  }
+}

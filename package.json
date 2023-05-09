@@ -1,0 +1,51 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Saurabh's portfolio site.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
+  },
+  "prettier": {
+    "bracketSameLine": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schardev/schar.dev"
+  },
+  "author": "Saurabh Charde <saurabhchardereal@gmail.com>",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@vercel/og": "^0.5.4",
+    "autoprefixer": "^10.4.14",
+    "clsx": "^1.2.1",
+    "contentlayer": "^0.3.2",
+    "iconoir-react": "^6.8.0",
+    "next": "^13.4.1",
+    "next-contentlayer": "^0.3.2",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-slug": "^5.1.0",
+    "remark-gfm": "^3.0.1",
+    "sharp": "^0.32.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/mdx": "^2.0.5",
+    "@types/node": "^18.16.5",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "css-modular-type": "^0.3.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.1",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2"
+  }
+}
