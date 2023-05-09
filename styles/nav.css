@@ -84,7 +84,7 @@
   }
 
   .nav ul > * + * {
-    margin-bottom: theme(spacing.2);
+    margin-top: theme(spacing.2);
   }
 
   .nav li {
