@@ -10,8 +10,8 @@ type CardProps = {
 };
 
 const Card = ({ title, subtitle, tags, href }: CardProps) => {
-  const isExternalLink = href.startsWith("https");
-  const Link = isExternalLink ? "a" : NextLink;
+  const isRouterLink = href.startsWith('/')
+  const Link = isRouterLink ? NextLink : "a";
 
   return (
     <>
@@ -26,7 +26,7 @@ const Card = ({ title, subtitle, tags, href }: CardProps) => {
             "flex flex-col h-full w-full relative text-black bg-white p-4 lg:p-6",
             "dark:text-white dark:bg-black transition-theme"
           )}>
-          {isExternalLink && (
+          {!isRouterLink && (
             <div
               className={clsx(
                 "absolute text-sm right-4 lg:right-6 text-grey-200 dark:text-grey-500",
