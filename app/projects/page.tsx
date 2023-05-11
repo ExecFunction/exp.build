@@ -13,6 +13,12 @@ export const metadata: Metadata = {
 
 const projects = [
   {
+    title: "schar.dev",
+    desc: "My personal portfolio website built using latest Next 13 app directory, Tailwind CSS and Content Layer.",
+    href: `${config.socials.github}/schar.dev`,
+    tags: ["React", "Next.js", "Tailwind CSS", "Content Layer"],
+  },
+  {
     title: "CSS Modular Type",
     desc: "A PostCSS and TailwindCSS plugin to generate modular type scales.",
     href: `${config.socials.github}/css-modular-type`,
@@ -20,9 +26,9 @@ const projects = [
   },
   {
     title: "Netflix Clone",
-    desc: "Netflix clone built using TMDB API. ",
+    desc: "Netflix clone built using React and React Router DOM, Vite and TMDB API. ",
     href: "https://nfx.vercel.app",
-    tags: ["Typescript", "React", "SCSS"],
+    tags: ["Typescript", "React", "SCSS", "Vite"],
   },
 ];
 
