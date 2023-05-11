@@ -25,7 +25,7 @@ const Blog = () => {
             key={post.title}
             title={post.title}
             subtitle={formatDate(post.date)}
-            href={post.url}
+            href={`/${post.url}`}
             tags={post.tags}
           />
         ))}

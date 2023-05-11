@@ -1,18 +1,18 @@
 import { default as NextLink } from "next/link";
 
-const MarkdownLink = ({
+const Link = ({
   children,
   href = "",
   ...restProps
 }: React.ComponentPropsWithoutRef<"a">) => {
   const isRouterLink = href.startsWith("/");
-  const isAnchorLink = href.startsWith("#");
+  const isExternalLink = href.startsWith("https");
   const Link = isRouterLink ? NextLink : "a";
 
   return (
     <Link
       href={href}
-      {...(!isAnchorLink
+      {...(isExternalLink
         ? { rel: "noopener noreferrer", target: "_blank" }
         : {})}
       {...restProps}>
@@ -21,4 +21,4 @@ const MarkdownLink = ({
   );
 };
 
-export default MarkdownLink;
+export default Link;
