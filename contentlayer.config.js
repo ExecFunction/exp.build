@@ -33,8 +33,8 @@ export const BlogPost = defineDocumentType(() => ({
     // TODO: Add image field once it lands in `contentlayer`
     ogImage: {
       type: "string",
-      description: "open Graph image"
-    }
+      description: "Open Graph image",
+    },
   },
   computedFields: {
     url: {
