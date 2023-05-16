@@ -40,6 +40,7 @@ const Project = () => {
         {projects.map((proj) => {
           return (
             <Card
+              key={proj.title}
               title={proj.title}
               subtitle={proj.desc}
               tags={proj.tags}

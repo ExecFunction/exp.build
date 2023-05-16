@@ -1,12 +1,13 @@
 import LinkHeader from "@/components/link-header";
 import clsx from "clsx";
+import Image from "next/image";
 
 const Home = () => {
   return (
     <>
       <div className="bg-circles"></div>
       <div className="flex justify-center items-center flex-col h-screen mx-6 text-center space-y-6 lg:space-y-8">
-        <img
+        <Image
           className="w-32 lg:w-40 rounded-full pointer-events-none"
           src="/images/avataar.svg"
           alt=""
@@ -17,9 +18,7 @@ const Home = () => {
           className={clsx(
             "rounded-full px-[1em] py-[0.5em] text-fluid--1 bg-grey-200/30",
             "dark:bg-grey-900/50"
-          )}>
-          Hey, I'm Saurabh.
-        </h1>
+          )}>{`Hey, I'm Saurabh.`}</h1>
         <p className="text-fluid-1 font-bold lg:text-fluid-2 lg:font-medium">
           I’m a <span className="text-gradient-primary">front-end</span> web
           developer with a habbit of getting things done in a clean, minimalist
@@ -42,25 +41,25 @@ const Home = () => {
           About
         </LinkHeader>
         <p>
-          Hey there! I'm a self-taught front-end web developer based in
+          {`Hey there! I'm a self-taught front-end web developer based in
           Maharashtra, India, with a passion for building clean and performant
-          web apps.
+          web apps.`}
         </p>
         <p>
-          When I'm not busy churning out code, you can probably find me watching
-          anime or tinkering around with my Linux setup.
+          {`When I'm not busy churning out code, you can probably find me watching
+          anime or tinkering around with my Linux setup.`}
         </p>
         <p>
-          Learning about how stuff works behind the scenes, and geeking out on
+          {`Learning about how stuff works behind the scenes, and geeking out on
           web performance and security always get me excited. I'm always looking
-          for new ways to enhance my knowledge of modern web technologies.
+          for new ways to enhance my knowledge of modern web technologies.`}
         </p>
         <p>
-          I firmly believe that modern web technologies should be utilized to
-          their fullest potential, without the burden of carrying legacy stuff.
+          {`I firmly believe that modern web technologies should be utilized to
+          their fullest potential, without the burden of carrying legacy stuff.`}
         </p>
         <p className="text-gradient-secondary font-medium">
-          Let's keep it fresh and exciting, folks!
+          {`Let's keep it fresh and exciting, folks!`}
         </p>
       </div>
     </>

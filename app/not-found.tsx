@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const NotFound = () => {
   return (
     <>
@@ -10,10 +12,11 @@ const NotFound = () => {
       </head>
       <div className="flex flex-col items-center justify-center h-full text-black dark:text-white">
         <div className="bg-circles"></div>
-        <img
+        <Image
           src="/images/yuzuko_404.webp"
           alt=""
           width={150}
+          height={150}
           className="pointer-events-none w-40"
         />
         <h1 className="text-fluid-4">404</h1>

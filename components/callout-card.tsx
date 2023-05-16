@@ -12,20 +12,17 @@ const calloutCards = {
   note: {
     icon: <InfoEmpty />,
     text: "Note",
-    className:
-      "bg-[hsl(var(--color-teal-100))] text-[color:hsl(var(--color-teal-950))]",
+    className: "bg-teal-100 text-teal-950",
   },
   danger: {
     icon: <ErrorCross />,
     text: "Danger",
-    className:
-      "bg-[hsl(var(--color-red-100))] text-[color:hsl(var(--color-red-950))]",
+    className: "bg-red-100 text-red-950",
   },
   warning: {
     icon: <WarningTriangle />,
     text: "Warning",
-    className:
-      "bg-[hsl(var(--color-yellow-100))] text-[color:hsl(var(--color-yellow-950))]",
+    className: "bg-yellow-100 text-yellow-950",
   },
 };
 

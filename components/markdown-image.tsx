@@ -6,6 +6,7 @@ const MarkdownImage = async ({ src, alt = "" }: MarkdownImageProps) => {
   if (!src) return null;
   const isPublicImage = src.startsWith("/");
   const isExternalImage = src.startsWith("https");
+  // eslint-disable-next-line @next/next/no-img-element
   let ImgToRender = <img src={src} alt={alt} />;
 
   if (isPublicImage) {

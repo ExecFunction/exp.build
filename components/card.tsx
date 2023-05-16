@@ -44,7 +44,9 @@ const Card = ({ title, subtitle, tags, href }: CardProps) => {
         </p>
         <div className="flex flex-wrap gap-2 mt-auto">
           {tags.map((tag) => (
-            <div className={clsx("bg-gradient-primary bg-fixed rounded-full")}>
+            <div
+              key={tag}
+              className={clsx("bg-gradient-primary bg-fixed rounded-full")}>
               <p
                 className={clsx(
                   "pill bg-white dark:bg-black transition-theme",
