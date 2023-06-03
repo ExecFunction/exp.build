@@ -19,6 +19,12 @@ const projects = [
     tags: ["React", "Next.js", "Tailwind CSS", "Content Layer"],
   },
   {
+    title: "Torrent Metadata",
+    desc: "A simple web app to extract metadata from .torrent file, magnet URI or torrent info hash.",
+    href: `${config.socials.github}/torrent-metadata`,
+    tags: ["Express", "Next.js", "Typescript", "React", "Tailwind CSS"],
+  },
+  {
     title: "CSS Modular Type",
     desc: "A PostCSS and TailwindCSS plugin to generate modular type scales.",
     href: `${config.socials.github}/css-modular-type`,
